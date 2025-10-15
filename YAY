@@ -1,0 +1,72 @@
+import React from 'react';
+
+function Header() {
+    return (
+        <header style={{ background: '#0077be', color: '#fff', padding: '1rem' }}>
+            <h1>AquaLife</h1>
+            <nav>
+                <a href="#about" style={{ color: '#fff', marginRight: '1rem' }}>About</a>
+                <a href="#species" style={{ color: '#fff', marginRight: '1rem' }}>Species</a>
+                <a href="#conservation" style={{ color: '#fff' }}>Conservation</a>
+            </nav>
+        </header>
+    );
+}
+
+function About() {
+    return (
+        <section id="about" style={{ padding: '2rem' }}>
+            <h2>About AquaLife</h2>
+            <p>
+                AquaLife is dedicated to exploring and protecting aquatic ecosystems. Discover fascinating marine species, learn about conservation efforts, and find out how you can help preserve our planet's water resources.
+            </p>
+        </section>
+    );
+}
+
+function Species() {
+    return (
+        <section id="species" style={{ background: '#e0f7fa', padding: '2rem' }}>
+            <h2>Featured Species</h2>
+            <ul>
+                <li>Clownfish</li>
+                <li>Sea Turtle</li>
+                <li>Coral</li>
+                <li>Jellyfish</li>
+            </ul>
+        </section>
+    );
+}
+
+function Conservation() {
+    return (
+        <section id="conservation" style={{ padding: '2rem' }}>
+            <h2>Conservation Efforts</h2>
+            <p>
+                Join us in protecting aquatic life! Support clean water initiatives, reduce plastic use, and participate in local conservation projects.
+            </p>
+        </section>
+    );
+}
+
+function Footer() {
+    return (
+        <footer style={{ background: '#0077be', color: '#fff', textAlign: 'center', padding: '1rem' }}>
+            &copy; {new Date().getFullYear()} AquaLife. All rights reserved.
+        </footer>
+    );
+}
+
+function App() {
+    return (
+        <div>
+            <Header />
+            <About />
+            <Species />
+            <Conservation />
+            <Footer />
+        </div>
+    );
+}
+
+export default App;
